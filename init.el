@@ -28,6 +28,7 @@
 (require 'bindings)
 (require 'defuns)
 (require 'misc)
+(require 'registers)
 
 ;; elpa
 (add-to-list 'load-path (concat dotfiles-dir "/elpa"))
