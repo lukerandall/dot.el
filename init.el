@@ -3,6 +3,7 @@
                     (or (buffer-file-name) load-file-name)))
 (add-to-list 'load-path dotfiles-dir)
 (add-to-list 'load-path (concat dotfiles-dir "/color-theme"))
+(add-to-list 'load-path (concat dotfiles-dir "/modes"))
 
 (toggle-scroll-bar -1)
 (menu-bar-mode -1)
@@ -54,6 +55,13 @@
 (require 'haml-mode)
 (require 'sass-mode)
 (require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
+(require 'js2-mode)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+(require 'markdown-mode)
+(setq auto-mode-alist (cons '("\\.text" . markdown-mode) auto-mode-alist))
 
 (require 'find-file-in-project)
 (require 'gist)

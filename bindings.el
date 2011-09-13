@@ -2,7 +2,7 @@
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 
 ;; Open next line like TextMate
-(global-set-key (kbd "M-r") 'open-next-line)
+(global-set-key (kbd "M-RET") 'open-next-line)
 
 ;; Align your code in a pretty way.
 (global-set-key (kbd "C-x \\") 'align-regexp)
