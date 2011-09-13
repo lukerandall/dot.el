@@ -3,6 +3,7 @@
 
 (setq echo-keystrokes 0.1
       inhibit-startup-message t
+      inhibit-startup-echo-area-message t
       transient-mark-mode t
       color-theme-is-global t
       require-final-newline t
