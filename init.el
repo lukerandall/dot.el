@@ -4,6 +4,10 @@
 (add-to-list 'load-path dotfiles-dir)
 (add-to-list 'load-path (concat dotfiles-dir "/color-theme"))
 
+(toggle-scroll-bar -1)
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+
 (require 'color-theme)
 (eval-after-load "color-theme"
   '(progn
