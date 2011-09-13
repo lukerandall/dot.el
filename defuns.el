@@ -236,9 +236,10 @@ Symbols matching the text at point are put first in the completion list."
   (let ((name (file-relative-name file)))
     (vc-git-command buf 0 name "blame" "-w" rev)))
 
+;; Function to open and goto indented next line
+(defun open-next-line()
+  (interactive)
+  (move-end-of-line nil)
+  (newline-and-indent))
+
 (provide 'defuns)
-
-
-
-
-

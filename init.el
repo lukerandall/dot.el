@@ -53,7 +53,3 @@
 (autoload 'ack "full-ack" nil t)
 (autoload 'ack-find-same-file "full-ack" nil t)
 (autoload 'ack-find-file "full-ack" nil t)
-
-(global-linum-mode 1)
-
-(setq next-line-add-newlines t)
