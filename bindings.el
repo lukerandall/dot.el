@@ -1,7 +1,3 @@
-;;; starter-kit-bindings.el --- Set up some handy key bindings
-;;
-;; Part of the Emacs Starter Kit.
-
 ;; You know, like Readline.
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 
@@ -91,5 +87,4 @@
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 
-(provide 'starter-kit-bindings)
-;;; starter-kit-bindings.el ends here
+(provide 'bindings)

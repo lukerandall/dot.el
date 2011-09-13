@@ -8,8 +8,17 @@
                     (or (buffer-file-name) load-file-name)))
 (add-to-list 'load-path dotfiles-dir)
 
-;; bindings
-(load "bindings")
+;; generally useful things
+(require 'cl)
+(require 'saveplace)
+(require 'ffap)
+(require 'uniquify)
+(require 'ansi-color)
+(require 'recentf)
+
+;; starter kit stuff
+(require 'bindings)
+(require 'defuns)
 
 ;; elpa
 (add-to-list 'load-path (concat dotfiles-dir "/elpa"))
