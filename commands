@@ -1,0 +1,74 @@
+C-M-%		query-replace-regexp
+C-x z		repeat, with z sufficing for ensuing invocations
+C-x M-:		edit last command
+C-M-x		eval-defun (see also eval-region and eval-buffer)
+C-x C-u		upcase region
+M-u 		upcase word
+C-x C-l		downcase region
+M-l 		downcase word
+M-c		capitalize word (see also capitalize-region)
+
+Movement
+--------
+
+M-e		forward by sentence
+M-a		backward by sentence
+C-v		scroll down
+M-v		scroll up
+C-M-v		scroll other window
+C-M-f		forward by s-expression
+C-M-b		backward by s-expression
+C-M-d		down into list
+C-M-u		up out of list
+M-m		beginning of line
+
+Navigation
+----------
+
+C-x r SPC	store point in register
+C-x r j		jump to point in register
+C-x r m		save a named bookmark
+C-x r b		jump to named bookmark
+C-x r l		list named bookmarks
+C-x C-x		exchange point and mark
+C-u C-SPC	cycle through mark ring
+M-r 		move point between top, middle and bottom
+C-x C-n		set goal column
+C-u C-x C-n	disable goal column
+C-u M-g M-g 	go to line in previous buffer
+M-g M-n 	next error
+M-G M-p 	previous error
+C-M-a 		beginning defun
+C-M-e 		end defun
+
+Occur
+-----
+M-s o 		occur Csee also multi-occur and multi-occur-in-matching-buffers)
+r   		rename buffer
+C-c C-f 	enable follow mode
+M-g M-n 	next match
+M-g M-p 	previous match
+
+
+Isearch
+-------
+
+C-w		yank word after point
+C-y		yank line after point
+M-c		toggle case sensitivity
+M-n		back through history
+M-p		forward through history
+C-s C-s		repeat last search
+M-s w		fuzzy find
+
+Keybindings
+-----------
+
+C-h m		show all major and minor key bindings
+_-_ C-h 	show all key bindings with _-_ as a prefix
+
+Macros
+------
+
+C-x (		start capturing macro
+C-x )		stop capturing macro (see also name-last-kbd-macro)
