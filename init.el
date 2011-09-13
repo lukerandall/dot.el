@@ -2,6 +2,14 @@
 (setq dotfiles-dir (file-name-directory
                     (or (buffer-file-name) load-file-name)))
 (add-to-list 'load-path dotfiles-dir)
+(add-to-list 'load-path (concat dotfiles-dir "/color-theme"))
+
+(require 'color-theme)
+(eval-after-load "color-theme"
+  '(progn
+     (color-theme-initialize)
+     (require 'color-theme-ir-black)
+     (color-theme-ir-black)))
 
 ;; generally useful things
 (require 'cl)
