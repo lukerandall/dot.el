@@ -5,6 +5,8 @@
 (add-to-list 'load-path (concat dotfiles-dir "/color-theme"))
 (add-to-list 'load-path (concat dotfiles-dir "/modes"))
 
+(add-to-list 'exec-path "/usr/local/bin")
+
 (toggle-scroll-bar -1)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
