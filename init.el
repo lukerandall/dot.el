@@ -37,6 +37,6 @@
   (setq ido-everywhere t)
   (ido-mode 1)
 
-;; haml & sass
+(require 'magit)
 (require 'haml-mode)
 (require 'sass-mode)
