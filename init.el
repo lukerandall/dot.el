@@ -1,8 +1,3 @@
-;; turn off mouse interface
-(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
-
 ;; setup load path
 (setq dotfiles-dir (file-name-directory
                     (or (buffer-file-name) load-file-name)))
@@ -19,6 +14,7 @@
 ;; starter kit stuff
 (require 'bindings)
 (require 'defuns)
+(require 'misc)
 
 ;; elpa
 (add-to-list 'load-path (concat dotfiles-dir "/elpa"))
@@ -37,6 +33,27 @@
   (setq ido-everywhere t)
   (ido-mode 1)
 
+;; smart-tab
+(require 'smart-tab)
+(global-smart-tab-mode 1)
+
 (require 'magit)
+(require 'ruby-mode)
 (require 'haml-mode)
 (require 'sass-mode)
+(require 'yaml-mode)
+
+(require 'find-file-in-project)
+(require 'gist)
+(require 'htmlize)
+(require 'kill-ring-search)
+(require 'lusty-explorer)
+
+(autoload 'ack-same "full-ack" nil t)
+(autoload 'ack "full-ack" nil t)
+(autoload 'ack-find-same-file "full-ack" nil t)
+(autoload 'ack-find-file "full-ack" nil t)
+
+(global-linum-mode 1)
+
+(setq next-line-add-newlines t)
