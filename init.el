@@ -72,11 +72,11 @@
 (require 'gist)
 (require 'htmlize)
 (require 'kill-ring-search)
-(require 'lusty-explorer)
 
 (autoload 'ack-same "full-ack" nil t)
 (autoload 'ack "full-ack" nil t)
 (autoload 'ack-find-same-file "full-ack" nil t)
 (autoload 'ack-find-file "full-ack" nil t)
+
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
