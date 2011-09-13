@@ -56,6 +56,7 @@
 
 (require 'magit)
 (require 'ruby-mode)
+(require 'rinari)
 (require 'haml-mode)
 (require 'sass-mode)
 (require 'yaml-mode)
