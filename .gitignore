@@ -1,1 +1,5 @@
 *~
+*elc
+places
+backups/*
+.DS_Store
