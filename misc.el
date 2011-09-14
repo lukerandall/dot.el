@@ -16,7 +16,7 @@
 
 ;; Transparently open compressed files
 (auto-compression-mode t)
- 
+
 ;; Enable syntax highlighting for older Emacsen that have it off
 (global-font-lock-mode t)
 
@@ -38,5 +38,11 @@
 
 ;; Automatically add newlines
 (setq next-line-add-newlines t)
+
+(fset 'yes-or-no-p 'y-or-n-p)
+
+(setq confirm-nonexistent-file-or-buffer nil)
+
+(setq ido-create-new-buffer 'always)
 
 (provide 'misc)

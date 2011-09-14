@@ -83,4 +83,12 @@
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 
+(require 'recentf)
+
+;; enable recent files mode.
+(recentf-mode t)
+
+; 50 files ought to be enough.
+(setq recentf-max-saved-items 50)
+
 (add-hook 'before-save-hook 'delete-trailing-whitespace)

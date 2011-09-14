@@ -32,6 +32,7 @@ C-x r b		jump to named bookmark
 C-x r l		list named bookmarks
 C-x C-x		exchange point and mark
 C-u C-SPC	cycle through mark ring
+C-x C-SPC 	cycle through buffers
 M-r 		move point between top, middle and bottom
 C-x C-n		set goal column
 C-u C-x C-n	disable goal column
@@ -43,12 +44,21 @@ C-M-e 		end defun
 
 Occur
 -----
-M-s o 		occur Csee also multi-occur and multi-occur-in-matching-buffers)
+M-s o 		occur (see also multi-occur and multi-occur-in-matching-buffers)
 r   		rename buffer
 C-c C-f 	enable follow mode
 M-g M-n 	next match
 M-g M-p 	previous match
 
+Search
+------
+
+M-s h l		highlight-lines-matching-regexp
+M-s h p 	highlight-phrase
+M-s h r 	highlight-regex
+M-s h u 	unhighlight-regexp
+M-s h w 	hi-lock-write-interactive-patterns
+M-s h f 	hi-lock-find-patterns
 
 Isearch
 -------

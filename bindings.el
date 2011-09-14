@@ -99,4 +99,10 @@
 (global-set-key (kbd "C-`") 'push-mark-no-activate)
 (global-set-key (kbd "M-`") 'jump-to-mark)
 
+(global-set-key (kbd "C-x C-o") 'delete-blank-lines)
+
+(global-set-key (kbd "C-x C-r") 'ido-recentf-open)
+
+(global-set-key "%" 'match-paren)
+
 (provide 'bindings)
