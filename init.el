@@ -53,8 +53,8 @@
   (ido-mode 1)
 
 ;; smart-tab
-(require 'smart-tab)
-(global-smart-tab-mode 1)
+;; (require 'smart-tab)
+;; (global-smart-tab-mode 1)
 
 (require 'toggle-buffer)
 
