@@ -10,7 +10,7 @@
       uniquify-buffer-name-style 'forward
       ffap-machine-p-known 'reject
       whitespace-style '(trailing lines space-before-tab
-				  face indentation space-after-tab)
+                                  face indentation space-after-tab)
       whitespace-line-column 100
       save-place-file (concat dotfiles-dir "places"))
 
@@ -44,5 +44,7 @@
 (setq confirm-nonexistent-file-or-buffer nil)
 
 (setq ido-create-new-buffer 'always)
+
+(setq indent-tabs-mode nil)
 
 (provide 'misc)
