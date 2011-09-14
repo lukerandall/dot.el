@@ -1,0 +1,3 @@
+[submodule "eproject"]
+	path = eproject
+	url = git@github.com:lukerandall/eproject.git
