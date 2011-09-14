@@ -123,15 +123,7 @@ Symbols matching the text at point are put first in the completion list."
   (untabify-buffer)
   (delete-trailing-whitespace))
 
-(defun recentf-ido-find-file ()
-  "Find a recent file using ido."
-  (interactive)
-  (let ((file (ido-completing-read "Choose recent file: " recentf-list nil t)))
-    (when file
-      (find-file file))))
-
 ;; Cosmetic
-
 (defun pretty-lambdas ()
   (font-lock-add-keywords
    nil `(("(?\\(lambda\\>\\)"
@@ -140,7 +132,6 @@ Symbols matching the text at point are put first in the completion list."
                     nil))))))
 
 ;; Other
-
 (defun eval-and-replace ()
   "Replace the preceding sexp with its value."
   (interactive)
