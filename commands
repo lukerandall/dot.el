@@ -1,93 +1,99 @@
-C-M-%		query-replace-regexp
-C-x z		repeat, with z sufficing for ensuing invocations
-C-x M-:		edit last command
-C-M-x		eval-defun (see also eval-region and eval-buffer)
-C-x C-u		upcase region
-M-u 		upcase word
-C-x C-l		downcase region
-M-l 		downcase word
-M-c		capitalize word (see also capitalize-region)
+        C-M-%           query-replace-regexp
+        C-x z           repeat, with z sufficing for ensuing invocations
+        C-x M-:         edit last command
+        C-M-x           eval-defun (see also eval-region and eval-buffer)
+        C-x C-u         upcase region
+        M-u             upcase word
+        C-x C-l         downcase region
+        M-l             downcase word
+        M-c             capitalize word (see also capitalize-region)
 
-Movement
---------
+        Movement
+        --------
 
-M-e		forward by sentence
-M-a		backward by sentence
-C-v		scroll down
-M-v		scroll up
-C-M-v		scroll other window
-C-M-f		forward by s-expression
-C-M-b		backward by s-expression
-C-M-d		down into list
-C-M-u		up out of list
-M-m		beginning of line
+        M-e             forward by sentence
+        M-a             backward by sentence
+        C-v             scroll down
+        M-v             scroll up
+        C-M-v           scroll other window
+        C-M-f           forward by s-expression
+        C-M-b           backward by s-expression
+        C-M-d           down into list
+        C-M-u           up out of list
+        M-m             beginning of line
 
-Navigation
-----------
+        Navigation
+        ----------
 
-C-x r SPC	store point in register
-C-x r j		jump to point in register
-C-x r m		save a named bookmark
-C-x r b		jump to named bookmark
-C-x r l		list named bookmarks
-C-x C-x		exchange point and mark
-C-u C-SPC	cycle through mark ring
-C-x C-SPC 	cycle through buffers
-M-r 		move point between top, middle and bottom
-C-x C-n		set goal column
-C-u C-x C-n	disable goal column
-C-u M-g M-g 	go to line in previous buffer
-M-g M-n 	next error
-M-G M-p 	previous error
-C-M-a 		beginning defun
-C-M-e 		end defun
+        C-x r SPC       store point in register
+        C-x r j         jump to point in register
+        C-x r m         save a named bookmark
+        C-x r b         jump to named bookmark
+        C-x r l         list named bookmarks
+        C-x C-x         exchange point and mark
+        C-u C-SPC       cycle through mark ring
+        C-x C-SPC       cycle through buffers
+        M-r             move point between top, middle and bottom
+        C-x C-n         set goal column
+        C-u C-x C-n     disable goal column
+        C-u M-g M-g     go to line in previous buffer
+        M-g M-n         next error
+        M-G M-p         previous error
+        C-M-a           beginning defun
+        C-M-e           end defun
 
-Indentation
------------
+        Indentation
+        -----------
 
-M-^		merge two lines
-C-M-o 		split line at point
-C-M-\		indent lines to same column
-C-x TAB 	shift blocks rigidly left or right
-M-i		indent from point to next tab stop
+        M-^             merge two lines
+        C-M-o           split line at point
+        C-M-\           indent lines to same column
+        C-x TAB         shift blocks rigidly left or right
+        M-i             indent from point to next tab stop
 
-Occur
------
-M-s o 		occur (see also multi-occur and multi-occur-in-matching-buffers)
-r   		rename buffer
-C-c C-f 	enable follow mode
-M-g M-n 	next match
-M-g M-p 	previous match
+        Occur
+        -----
+        M-s o           occur (see also multi-occur and multi-occur-in-matching-buffers)
+        r               rename buffer
+        C-c C-f         enable follow mode
+        M-g M-n         next match
+        M-g M-p         previous match
 
-Search
-------
+        Search
+        ------
 
-M-s h l		highlight-lines-matching-regexp
-M-s h p 	highlight-phrase
-M-s h r 	highlight-regex
-M-s h u 	unhighlight-regexp
-M-s h w 	hi-lock-write-interactive-patterns
-M-s h f 	hi-lock-find-patterns
+        M-s h l         highlight-lines-matching-regexp
+        M-s h p         highlight-phrase
+        M-s h r         highlight-regex
+        M-s h u         unhighlight-regexp
+        M-s h w         hi-lock-write-interactive-patterns
+        M-s h f         hi-lock-find-patterns
 
-Isearch
--------
+        Isearch
+        -------
 
-C-w		yank word after point
-C-y		yank line after point
-M-c		toggle case sensitivity
-M-n		back through history
-M-p		forward through history
-C-s C-s		repeat last search
-M-s w		fuzzy find
+        C-w             yank word after point
+        C-y             yank line after point
+        M-c             toggle case sensitivity
+        M-n             back through history
+        M-p             forward through history
+        C-s C-s         repeat last search
+        M-s w           fuzzy find
 
-Keybindings
------------
+        Keybindings
+        -----------
 
-C-h m		show all major and minor key bindings
-_-_ C-h 	show all key bindings with _-_ as a prefix
+        C-h m           show all major and minor key bindings
+        _-_ C-h         show all key bindings with _-_ as a prefix
 
-Macros
-------
+        Macros
+        ------
 
-C-x (		start capturing macro
-C-x )		stop capturing macro (see also name-last-kbd-macro)
+        C-x (           start capturing macro
+        C-x )           stop capturing macro (see also name-last-kbd-macro)
+
+	Local bindings
+	--------------
+
+	C-c n		clean up buffer
+
