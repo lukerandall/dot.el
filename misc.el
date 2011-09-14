@@ -47,4 +47,6 @@
 
 (setq indent-tabs-mode nil)
 
+(setq tramp-default-method "ssh")
+
 (provide 'misc)
