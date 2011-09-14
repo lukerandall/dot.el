@@ -2,7 +2,7 @@
 (dolist (r `((?i (file . ,(concat dotfiles-dir "init.el")))
              (?b (file . ,(concat dotfiles-dir "bindings.el")))
              (?r (file . ,(concat dotfiles-dir "registers.el")))
-	     (?m (file . ,(concat dotfiles-dir "misc.el")))
+             (?m (file . ,(concat dotfiles-dir "misc.el")))
              (?c (file . ,(concat dotfiles-dir "commands")))))
   (set-register (car r) (cadr r)))
 
