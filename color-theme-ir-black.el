@@ -1,4 +1,4 @@
-;;; color-theme-ir-black.el --- pastel color theme 
+;;; color-theme-ir-black.el --- pastel color theme
 ;; MIT License Copyright (c) 2009 Burke Libbey <burke@burkelibbey.org>
 ;; URL: https://github.com/kurtharriger/color-theme-ir-black
 ;; Author: Burke Libbey, Kurt Harriger
@@ -10,20 +10,20 @@
   (interactive)
 
   (let ((*normal*       "#F6F3E8")
-        (*background*   "#222222")
+        (*background*   "#191919")
         (*cursor*       "#FFA560")
         (*mouse*        "sienna1")
-        (*region*       "#1D1E2C")
-        (*current-line* "#151515")
+        (*region*       "#211E37")
+        (*current-line* "#000000")
         (*string*       "#A8FF60")
-        (*keyword*      "#66B5FF")
+        (*keyword*      "#8BBCEA")
         (*method*       "#FFB774")
-        (*comment*      "#7C7C7C")
+        (*comment*      "#999999")
         (*constant*     "#99CC99")
-        (*red*          "#FF6C60")
+        (*red*          "#E66A6B")
         (*operator*     "#FFFFFF")
-        (*class*        "#FFFFB6")
-        (*variable*     "#C6C5FE"))
+        (*class*        "#FBFCB6")
+        (*variable*     "#C6C4FD"))
 
     (flet ((color (fgcolor &optional (bgcolor nil) (bold nil) (italic nil) (underline nil))
                   `((t (,@(if fgcolor   `(:foreground ,fgcolor))
