@@ -4,3 +4,4 @@ places
 backups/*
 .DS_Store
 tramp
+.#*
