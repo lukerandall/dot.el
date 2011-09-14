@@ -4,6 +4,9 @@
 (add-to-list 'load-path dotfiles-dir)
 (add-to-list 'load-path (concat dotfiles-dir "/color-theme"))
 (add-to-list 'load-path (concat dotfiles-dir "/modes"))
+(add-to-list 'load-path (concat dotfiles-dir "/eproject"))
+(add-to-list 'load-path (concat dotfiles-dir "/eproject/contrib"))
+(add-to-list 'load-path (concat dotfiles-dir "/eproject/lang"))
 
 (add-to-list 'exec-path "/usr/local/bin")
 
@@ -39,6 +42,15 @@
                   ("elpa" . "http://tromey.com/elpa/")))
   (add-to-list 'package-archives source t))
 (package-initialize)
+
+;; eproject
+(require 'eproject)
+(require 'eproject-extras)
+(require 'eproject-tags)
+(require 'eproject-lang-ruby)
+(require 'eproject-lang-haskell)
+(defvar eproject-tags-etags "ctags")
+(defvar eproject-completing-read-function 'eproject--ido-completing-read)
 
 ;; smex
 (require 'smex)
@@ -94,3 +106,6 @@
 (setq recentf-max-saved-items 50)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(custom-set-variables
+ '(eproject-completing-read-function (quote eproject--ido-completing-read)))
