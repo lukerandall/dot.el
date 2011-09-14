@@ -49,4 +49,7 @@
 
 (setq tramp-default-method "ssh")
 
+;; Don't expand the entire line
+(delete 'try-expand-line hippie-expand-try-functions-list)
+
 (provide 'misc)
