@@ -42,6 +42,15 @@ M-G M-p 	previous error
 C-M-a 		beginning defun
 C-M-e 		end defun
 
+Indentation
+-----------
+
+M-^		merge two lines
+C-M-o 		split line at point
+C-M-\		indent lines to same column
+C-x TAB 	shift blocks rigidly left or right
+M-i		indent from point to next tab stop
+
 Occur
 -----
 M-s o 		occur (see also multi-occur and multi-occur-in-matching-buffers)

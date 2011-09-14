@@ -56,6 +56,8 @@
 (require 'smart-tab)
 (global-smart-tab-mode 1)
 
+(require 'toggle-buffer)
+
 (require 'magit)
 (require 'ruby-mode)
 (require 'rinari)

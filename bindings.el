@@ -103,6 +103,8 @@
 
 (global-set-key (kbd "C-x C-r") 'ido-recentf-open)
 
+(global-set-key (kbd "C-=") 'joc-toggle-buffer)
+
 (global-set-key "%" 'match-paren)
 
 (provide 'bindings)
