@@ -52,6 +52,11 @@
 (defvar eproject-tags-etags "ctags")
 (defvar eproject-completing-read-function 'eproject--ido-completing-read)
 
+;; auto-indent return, yanks, etc
+(setq auto-indent-key-for-end-of-line-then-newline "<M-return>")
+(require 'auto-indent-mode)
+(auto-indent-global-mode)
+
 ;; smex
 (require 'smex)
 (smex-initialize)

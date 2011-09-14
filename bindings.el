@@ -1,17 +1,11 @@
 ;; You know, like Readline.
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 
-;; Open next line like TextMate
-(global-set-key (kbd "M-RET") 'open-next-line)
-
 ;; Align your code in a pretty way.
 (global-set-key (kbd "C-x \\") 'align-regexp)
 
 ;; Completion that uses many different methods to find options.
 (global-set-key (kbd "M-/") 'hippie-expand)
-
-;; Autoindent
-(define-key global-map (kbd "RET") 'newline-and-indent)
 
 ;; Perform general cleanup.
 (global-set-key (kbd "C-c n") 'cleanup-buffer)
