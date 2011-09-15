@@ -94,6 +94,8 @@
 (require 'gist)
 (require 'htmlize)
 (require 'kill-ring-search)
+(require 'wrap-region)
+(wrap-region-global-mode t)
 
 (autoload 'ack-same "full-ack" nil t)
 (autoload 'ack "full-ack" nil t)
