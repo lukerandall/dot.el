@@ -110,3 +110,5 @@
 
 (custom-set-variables
  '(eproject-completing-read-function (quote eproject--ido-completing-read)))
+
+(global-hl-line-mode 1)

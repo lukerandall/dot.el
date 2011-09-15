@@ -14,7 +14,7 @@
         (*cursor*       "#FFA560")
         (*mouse*        "sienna1")
         (*region*       "#211E37")
-        (*current-line* "#000000")
+        (*current-line* "#242424")
         (*string*       "#A8FF60")
         (*keyword*      "#8BBCEA")
         (*method*       "#FFB774")
