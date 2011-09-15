@@ -74,6 +74,11 @@
 (require 'magit)
 (require 'ruby-mode)
 (require 'rinari)
+(require 'ruby-electric)
+(require 'ruby-compilation)
+(require 'ruby-compilation-rspec)
+(require 'ruby)
+
 (require 'haml-mode)
 (require 'sass-mode)
 (require 'yaml-mode)
