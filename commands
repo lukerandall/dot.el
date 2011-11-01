@@ -20,7 +20,9 @@
         C-M-b           backward by s-expression
         C-M-d           down into list
         C-M-u           up out of list
-        M-m             beginning of line
+        M-m             beginning of text on line
+	C-a		beginning of line
+	C-e		end of line
 
         Navigation
         ----------
@@ -79,6 +81,12 @@
         M-p             forward through history
         C-s C-s         repeat last search
         M-s w           fuzzy find
+
+	Manipulation
+	------------
+
+	C-k		kill line
+	M-d		kill word
 
         Keybindings
         -----------
