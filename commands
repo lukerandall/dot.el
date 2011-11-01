@@ -74,6 +74,10 @@
         Isearch
         -------
 
+	C-s		isearch-forward-regexp
+	C-r		isearch-backward-regexp
+	C-M-s		isearch-forward
+	C-M-r		isearch-backward
         C-w             yank word after point
         C-y             yank line after point
         M-c             toggle case sensitivity
@@ -87,6 +91,22 @@
 
 	C-k		kill line
 	M-d		kill word
+	C-M-h		backward kill word
+
+	Windows
+	-------
+
+	C-x o		select other window
+	C-M-v		scroll other window
+	C-x 4 b		open buffer in another window
+	C-x 4 f		open file in another window
+	C-x 4 d		open directory in another window
+	C-x 4 .		find tag in another window
+	C-x 1		delete other windows
+	C-x 0		kill window
+	C-x ^		make window taller
+	C-x }		make window wider
+	C-x +		make other window wider
 
         Keybindings
         -----------
@@ -104,4 +124,4 @@
 	--------------
 
 	C-c n		clean up buffer
-
+	M-/ 		expand
