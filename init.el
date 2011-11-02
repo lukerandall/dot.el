@@ -14,6 +14,8 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
+(setq redisplay-dont-pause t)
+
 (require 'color-theme)
 (eval-after-load "color-theme"
   '(progn

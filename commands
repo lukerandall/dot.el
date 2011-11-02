@@ -125,3 +125,4 @@
 
 	C-c n		clean up buffer
 	M-/ 		expand
+	C-c C-d		duplicate line

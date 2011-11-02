@@ -92,11 +92,13 @@
 
 (global-set-key (kbd "M-n") 'smart-symbol-go-forward)
 (global-set-key (kbd "M-p") 'smart-symbol-go-backward)
+(global-set-key (kbd "M-i") 'ido-imenu)
 
 (global-set-key (kbd "C-`") 'push-mark-no-activate)
 (global-set-key (kbd "M-`") 'jump-to-mark)
 
 (global-set-key (kbd "C-x C-o") 'delete-blank-lines)
+(global-set-key (kbd "C-c C-d") 'duplicate-line)
 
 (global-set-key (kbd "C-x C-r") 'ido-recentf-open)
 
