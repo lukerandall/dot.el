@@ -8,6 +8,13 @@
         M-l             downcase word
         M-c             capitalize word (see also capitalize-region)
 
+	Files
+	-----
+
+	C-x C-r		open recent file
+	C-x b		open buffer
+	C-x C-f		open file
+
         Movement
         --------
 
@@ -92,6 +99,7 @@
 	C-k		kill line
 	M-d		kill word
 	C-M-h		backward kill word
+	C-x z		repeat (repeat invocations with z)
 
 	Windows
 	-------
